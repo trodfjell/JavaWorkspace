@@ -10,25 +10,17 @@ public class StudentImporterTests {
 		
 		ArrayList<Student> students = StudentImporter.importStudents(filePath);
 		
-		/**
-		Truls;15
-		Heidi;20
-		Eivind;12
-		Gøran;12
-		Morten;19
-		*/
-		
 		assertTrue(students.size() == 5);
-		assertTrue(students.get(0).name.equalsIgnoreCase("Truls"));
-		assertTrue(students.get(0).numberOfAttendances == 15);
-		assertTrue(students.get(1).name.equalsIgnoreCase("Heidi"));
-		assertTrue(students.get(1).numberOfAttendances == 20);
-		assertTrue(students.get(2).name.equalsIgnoreCase("Eivind"));
-		assertTrue(students.get(2).numberOfAttendances == 12);
-		assertTrue(students.get(3).name.equalsIgnoreCase("Gøran"));
-		assertTrue(students.get(3).numberOfAttendances == 12);
-		assertTrue(students.get(4).name.equalsIgnoreCase("Morten"));
-		assertTrue(students.get(4).numberOfAttendances == 19);
+		assertTrue(students.get(0).getName().equalsIgnoreCase("Truls"));
+		assertTrue(students.get(0).getNumberOfAttendances() == 15);
+		assertTrue(students.get(1).getName().equalsIgnoreCase("Heidi"));
+		assertTrue(students.get(1).getNumberOfAttendances() == 20);
+		assertTrue(students.get(2).getName().equalsIgnoreCase("Eivind"));
+		assertTrue(students.get(2).getNumberOfAttendances() == 12);
+		assertTrue(students.get(3).getName().equalsIgnoreCase("Gøran"));
+		assertTrue(students.get(3).getNumberOfAttendances() == 12);
+		assertTrue(students.get(4).getName().equalsIgnoreCase("Morten"));
+		assertTrue(students.get(4).getNumberOfAttendances() == 19);
 	}
 	
 }
