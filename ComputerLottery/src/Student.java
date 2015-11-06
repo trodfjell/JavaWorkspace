@@ -29,6 +29,7 @@ public class Student {
 		this.hasWon = true;
 	}
 	
-	
-	
+	public String toString(){
+		return this.name + " - " + this.numberOfAttendances + " - " + (this.hasWon ? "Har blitt trekt" : "Har ikke blitt trekt");
+	}
 }

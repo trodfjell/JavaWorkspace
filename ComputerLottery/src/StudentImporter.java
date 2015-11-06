@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class StudentImporter {
 	
+	/** Parse a CSV file containing Student objects*/
 	public static ArrayList<Student> importStudents(String filePath){
 		
 		ArrayList<Student> students = new ArrayList<Student>();
