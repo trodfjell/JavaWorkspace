@@ -2,11 +2,10 @@ import java.util.*;
 
 public class MainClass {
 	
-	private final static String fileName = "C:\\Users\\Truls\\Desktop\\StudentTest.txt";
+	private final static String fileName = "C:\\Users\\Truls\\Desktop\\StudentReal.csv";
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		
 		
 		System.out.println("Initializing...");
 		
@@ -22,9 +21,6 @@ public class MainClass {
 		System.out.println("Commands: \r\nStatus - Prints all the students. \r\nDraw - Draws one random student that has not won yet\r\nExit - Closes the application");
 		
 		
-		
-		
-		
 		// Loop to keep program running
 		while (true) {
 			System.out.println("Please enter a command:");
@@ -37,7 +33,7 @@ public class MainClass {
 
 			// TODO Draw - Draws one random student
 			else if (command.equalsIgnoreCase("Draw")) {
-				
+				LotteryMachine.PickWinnerAndPrintResult(allStudents);
 			}
 			
 			// Exit - Terminates the application
